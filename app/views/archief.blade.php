@@ -1,6 +1,6 @@
 @extends('mvh')
 
 @section('content')
-	<h4>Home</h4>
+	<h4>Archief</h4>
 	Under construction !
 @stop

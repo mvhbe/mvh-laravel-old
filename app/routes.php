@@ -17,3 +17,31 @@ Route::get(
 	   return View::make('home');
     }
 );
+
+Route::get(
+	'kalender',
+	function(){
+		return View::make('kalender');
+	}
+);
+
+Route::get(
+	'uitslagen',
+	function(){
+		return View::make('uitslagen');
+	}
+);
+
+Route::get(
+	'archief',
+	function(){
+		return View::make('archief');
+	}
+);
+
+Route::get(
+	'contact',
+	function(){
+		return View::make('contact');
+	}
+);
