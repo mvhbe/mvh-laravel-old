@@ -19,6 +19,13 @@ Route::get(
 );
 
 Route::get(
+	'home',
+	function(){
+		return View::make('home');
+	}
+);
+
+Route::get(
 	'kalender',
 	function(){
 		return View::make('kalender');

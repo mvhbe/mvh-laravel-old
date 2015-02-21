@@ -34,11 +34,11 @@
                 <li>
                     <h4>Navigatie</h4>
                     <ul>
-                        <li><a href="#" title="Home">Home</a></li>
-                        <li><a href="#" title="Kalender">Kalender</a></li>
-                        <li><a href="#" title="Uitslagen">Uitslagen</a></li>
-                        <li><a href="#" title="Archief">Archief</a></li>
-                        <li><a href="#" title="Contact">Contact</a></li>
+                        <li><a href="{{ URL::to('home') }}" title="Home">Home</a></li>
+                        <li><a href="{{ URL::to('kalender') }}" title="Kalender">Kalender</a></li>
+                        <li><a href="{{ URL::to('uitslagen') }}" title="Uitslagen">Uitslagen</a></li>
+                        <li><a href="{{ URL::to('archief') }}" title="Archief">Archief</a></li>
+                        <li><a href="{{ URL::to('contact') }}" title="Contact">Contact</a></li>
                     </ul>
                 </li>
             </ul>
