@@ -13,16 +13,12 @@
 
 Route::get(
     '/',
-    function(){
-	   return View::make('home');
-    }
+    'WedstrijdController@dezeMaand'
 );
 
 Route::get(
 	'home',
-	function(){
-		return View::make('home');
-	}
+    'WedstrijdController@dezeMaand'
 );
 
 Route::get(
