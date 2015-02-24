@@ -4,12 +4,12 @@ class WedstrijdController extends BaseController {
 
     public function dezeMaand(){
         // geef wedstrijden/evenenmenten door van de huidige maand
-        $wedstrijden = "Wedstrijden deze maand"
+        $wedstrijden = Kalender::all();
         return View::make(
             'home',
-            // array(
-            //     "wedstrijden" => $wedstrijden
-            // )
+            array(
+                "wedstrijden" => $wedstrijden
+            )
         );
     }
 
