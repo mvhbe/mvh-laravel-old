@@ -2,7 +2,7 @@
 
 class Kalender extends Eloquent {
 
-    protected $table = "kalender";
+    protected $table = "kalenders";
 
 }
 

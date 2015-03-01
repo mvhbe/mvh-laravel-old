@@ -17,11 +17,6 @@ Route::get(
 );
 
 Route::get(
-	'home',
-    'WedstrijdController@dezeMaand'
-);
-
-Route::get(
 	'kalender',
 	function(){
 		return View::make('kalender');

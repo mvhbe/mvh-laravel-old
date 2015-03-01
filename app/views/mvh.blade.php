@@ -34,7 +34,7 @@
                 <li>
                     <h4>Navigatie</h4>
                     <ul>
-                        <li><a href="{{ URL::to('home') }}" title="Home">Home</a></li>
+                        <li><a href="{{ URL::to('/') }}" title="Home">Home</a></li>
                         <li><a href="{{ URL::to('kalender') }}" title="Kalender">Kalender</a></li>
                         <li><a href="{{ URL::to('uitslagen') }}" title="Uitslagen">Uitslagen</a></li>
                         <li><a href="{{ URL::to('archief') }}" title="Archief">Archief</a></li>

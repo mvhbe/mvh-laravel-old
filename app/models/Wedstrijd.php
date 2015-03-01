@@ -2,7 +2,7 @@
 
 class Wedstrijd extends Eloquent {
 
-    protected $table = "wedstrijd";
+    protected $table = "wedstrijden";
 
 }
 
