@@ -18,9 +18,7 @@ Route::get(
 
 Route::get(
 	'kalender',
-	function(){
-		return View::make('kalender');
-	}
+	'KalenderController@laatsteKalender'
 );
 
 Route::get(

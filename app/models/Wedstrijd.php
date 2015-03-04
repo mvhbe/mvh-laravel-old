@@ -12,6 +12,13 @@ class Wedstrijd extends Eloquent {
         		->get();
         return $wedstrijden;
     }
+    
+    public static function getWedstrijdenVanKalender($kalender_id) {
+    	$wedstrijden = Wedstrijd::where('kalender_id', '=', $kalender_id)
+    			->orderBy('datum')
+    			->get();
+    	return $wedstrijden;
+    }
 }
 
 ?>
