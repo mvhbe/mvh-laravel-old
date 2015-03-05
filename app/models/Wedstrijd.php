@@ -19,6 +19,7 @@ class Wedstrijd extends Eloquent {
     			->get();
     	return $wedstrijden;
     }
+
 }
 
 ?>

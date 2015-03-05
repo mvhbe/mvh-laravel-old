@@ -15,7 +15,7 @@
             <div class="header">
                 <!-- TITLE -->
                 <h1><a href="#">Visclub Moed & Volharding</a></h1>
-                <h2>Pauwelstraat 21B, Herenthout</h2>
+                <h2>Herenthout</h2>
                 <div class="clear"></div>
                 <!-- END TITLE -->
             </div>
@@ -37,8 +37,16 @@
                         <li><a href="{{ URL::to('/') }}" title="Home">Home</a></li>
                         <li><a href="{{ URL::to('kalender') }}" title="Kalender">Kalender</a></li>
                         <li><a href="{{ URL::to('uitslagen') }}" title="Uitslagen">Uitslagen</a></li>
-                        <li><a href="{{ URL::to('archief') }}" title="Archief">Archief</a></li>
                         <li><a href="{{ URL::to('contact') }}" title="Contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h4>Archief</h4>
+                    <ul>
+                        <li><a href="{{ URL::to('archief/kalenders') }}" title="Kalenders">Kalenders</a></li>
+                        <li><a href="{{ URL::to('archief/uitslagen') }}" title="Uitslagen">Uitslagen</a></li>
                     </ul>
                 </li>
             </ul>

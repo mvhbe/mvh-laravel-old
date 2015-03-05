@@ -29,10 +29,13 @@ Route::get(
 );
 
 Route::get(
-	'archief',
-	function(){
-		return View::make('archief');
-	}
+	'archief/kalenders',
+	'ArchiefController@overzichtKalenders'
+);
+
+Route::get(
+	'archief/uitslagen',
+	'ArchiefController@overzichtUitslagen'
 );
 
 Route::get(
