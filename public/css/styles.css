@@ -190,6 +190,7 @@ table tr th {
     background:#4086AA none repeat-x scroll bottom left;
     color:#ffffff;
     border-top:3px solid #2B5B78;
+    text-align:left;
 }
 table tr td {
     border-bottom:1px solid #dddddd;
