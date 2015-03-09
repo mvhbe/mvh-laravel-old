@@ -2,7 +2,7 @@
 
 class KalenderController extends BaseController {
 
-    public function laatsteKalender(){
+    public function kalender(){
     	$kalender = Kalender::orderBy('jaar', 'desc')->first();
         $wedstrijden = Wedstrijd::getWedstrijdenVanKalender($kalender->id);
         return View::make('kalender')

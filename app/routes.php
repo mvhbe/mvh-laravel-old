@@ -18,7 +18,7 @@ Route::get(
 
 Route::get(
 	'kalender',
-	'KalenderController@laatsteKalender'
+	'KalenderController@kalender'
 );
 
 Route::get(

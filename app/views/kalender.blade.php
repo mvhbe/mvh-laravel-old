@@ -2,7 +2,7 @@
 
 @section('content')
 	<h4>Kalender</h4>
-	
+
 	@if($kalender->count() == 0)
 		<h3>Geen kalender.</h3>
 	@else
@@ -23,7 +23,7 @@
 	                    <td>{{ $wedstrijd->opmerkingen }}</td>
 	                </tr>
 	            @endforeach
-	        </table>		
+	        </table>
         @endif
 	@endif
-@stop
+@endsection
