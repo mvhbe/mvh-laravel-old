@@ -1,5 +1,9 @@
 @extends('mvh')
 
+@section('pagetitle')
+    Archief kalenders
+@endsection
+
 @section('content')
 	<h4>Archief</h4>
 

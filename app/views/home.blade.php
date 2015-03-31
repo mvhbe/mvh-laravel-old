@@ -1,5 +1,9 @@
 @extends('mvh')
 
+@section('pagetitle')
+    Home
+@endsection
+
 @section('content')
 	<h4>Home</h4>
 
