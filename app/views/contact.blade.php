@@ -1,8 +1,6 @@
 @extends('mvh')
 
-@section('pagetitle')
-    Contact
-@endsection
+@section('pagetitle', 'Contact')
 
 @section('content')
 	<h4>Contact</h4>

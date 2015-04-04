@@ -1,8 +1,6 @@
 @extends('mvh')
 
-@section('pagetitle')
-    Archief
-@endsection
+@section('pagetitle', 'Archief')
 
 @section('content')
 	<h4>Archief</h4>

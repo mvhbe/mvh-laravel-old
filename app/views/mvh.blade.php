@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>Visclub Moed & Volharding Herenthout - @yield('pagetitle')</title>
-    <meta name="description" content="Website Moed & Volharding, Pauwelstraat 21B, 2270 Herenthout" />
+    <meta name="description" content="Website Moed & Volharding, Pauwelstraat 21B, 2270 Herenthout - @yield('pagetitle') pagina" />
     <meta name="keywords" content="visclub,mvh,Moed,Volharding,pauwelstraat,herenthout,moed & volharding,moed en volharding,visclub moed & volharding,vislcub moed en volharding">
     <meta name="author" content="Guido Van Hoof">
     <meta charset="utf-8" />

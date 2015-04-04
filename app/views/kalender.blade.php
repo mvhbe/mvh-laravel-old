@@ -1,8 +1,6 @@
 @extends('mvh')
 
-@section('pagetitle')
-    Kalender
-@endsection
+@section('pagetitle', "Kalender")
 
 @section('content')
 	<h4>Kalender</h4>
