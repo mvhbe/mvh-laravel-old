@@ -18,13 +18,13 @@ class CreateTableUitslagen extends Migration {
 				$table->integer('wedstrijd_id')->unsigned();
 				$table->foreign('wedstrijd_id')->references('id')->on('wedstrijden');
 				$table->integer('volgorde')->unsigned();
-				$table->date('deelnemer');
-				$table->integer('plaats1')->unsigned();
-				$table->integer('gewicht1')->unsigned();
-				$table->integer('plaats2')->unsigned();
-				$table->integer('gewicht2')->unsigned();
-				$table->integer('plaats3')->unsigned();
-				$table->integer('gewicht3')->unsigned();
+				$table->string('deelnemer');
+				$table->integer('plaats1')->unsigned()->nullable();
+				$table->integer('gewicht1')->unsigned()->nullable();
+				$table->integer('plaats2')->unsigned()->nullable();
+				$table->integer('gewicht2')->unsigned()->nullable();
+				$table->integer('plaats3')->unsigned()->nullable();
+				$table->integer('gewicht3')->unsigned()->nullable();
 				$table->string('opmerkingen')->nullable();
 				$table->timestamps();
 			}
