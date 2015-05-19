@@ -1,6 +1,8 @@
 @extends('mvh')
 
 @section('pagetitle', 'Contact')
+@section('pagedescription', 'Bekijk de contact gegevens van visclub moed &amp; volharding herenthout')
+
 
 @section('content')
 	<h4>Contact</h4>

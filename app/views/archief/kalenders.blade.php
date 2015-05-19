@@ -1,6 +1,8 @@
 @extends('mvh')
 
 @section('pagetitle', 'Archief kalenders')
+@section('pagedescription', 'Bekijk het archief met kalenders van visclub moed &amp; volharding herenthout')
+
 
 @section('content')
 	<h4>Archief</h4>

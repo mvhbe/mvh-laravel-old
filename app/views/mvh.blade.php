@@ -1,13 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="nl">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <title>Visclub Moed & Volharding Herenthout - @yield('pagetitle')</title>
-    <meta name="description" content="Website Moed & Volharding, Pauwelstraat 21B, 2270 Herenthout - @yield('pagetitle') pagina" />
-    <meta name="keywords" content="visclub,mvh,Moed,Volharding,pauwelstraat,herenthout,moed & volharding,moed en volharding,visclub moed & volharding,vislcub moed en volharding">
-    <meta name="author" content="Guido Van Hoof">
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="{{ URL::asset('css/styles.css') }}" type="text/css" />
+    <title>Visclub Moed &amp; Volharding Herenthout - @yield('pagetitle')</title>
+    <meta name="description" content="@yield('pagedescription')"/>
+    <meta name="keywords" content="visclub,mvh,Moed,Volharding,pauwelstraat,herenthout,moed &amp; volharding,moed en volharding,visclub moed &amp; volharding,vislcub moed en volharding"/>
+    <meta name="author" content="Guido Van Hoof"/>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="{{ URL::asset('css/styles.css') }}"/>
 </head>
 <body>
     <div class="wrapper">
@@ -30,26 +29,28 @@
         <div class="sidebar">
 
             <!-- SIDEBAR -->
-            <ul>
-                <li>
-                    <h4>Navigatie</h4>
-                    <ul>
-                        <li><a href="{{ URL::to('/') }}" title="Home">Home</a></li>
-                        <li><a href="{{ URL::to('kalender') }}" title="Kalender">Kalender</a></li>
-                        <li><a href="{{ URL::to('uitslagen') }}" title="Uitslagen">Uitslagen</a></li>
-                        <li><a href="{{ URL::to('contact') }}" title="Contact">Contact</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <h4>Archief</h4>
-                    <ul>
-                        <li><a href="{{ URL::to('archief/kalenders') }}" title="Kalenders">Kalenders</a></li>
-                        <li><a href="{{ URL::to('archief/uitslagen') }}" title="Uitslagen">Uitslagen</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <h4>Navigatie</h4>
+                        <ul>
+                            <li><a href="{{ URL::to('/') }}" title="Home">Home</a></li>
+                            <li><a href="{{ URL::to('kalender') }}" title="Kalender">Kalender</a></li>
+                            <li><a href="{{ URL::to('uitslagen') }}" title="Uitslagen">Uitslagen</a></li>
+                            <li><a href="{{ URL::to('contact') }}" title="Contact">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Archief</h4>
+                        <ul>
+                            <li><a href="{{ URL::to('archief/kalenders') }}" title="Kalenders">Kalenders</a></li>
+                            <li><a href="{{ URL::to('archief/uitslagen') }}" title="Uitslagen">Uitslagen</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
             <!-- SIDEBAR -->
 
         </div>
