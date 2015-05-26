@@ -23,9 +23,7 @@ Route::get(
 
 Route::get(
 	'uitslagen',
-	function(){
-		return View::make('uitslagen');
-	}
+    'UitslagenController@uitslagen'
 );
 
 Route::get(

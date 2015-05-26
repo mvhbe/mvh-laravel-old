@@ -7,4 +7,17 @@
 @section('content')
 	<h4>Uitslagen</h4>
 	Under construction !
-@stop
+
+        <table>
+            <tr>
+                <th>Datum</th>
+                <th>Omschrijving</th>
+            </tr>
+            @foreach($wedstrijden as $wedstrijd)
+                <tr>
+                    <td>{{ $wedstrijd->datum }}</td>
+                    <td>{{ $wedstrijd->omschrijving }}</td>
+                </tr>
+            @endforeach
+        </table>
+@endsection

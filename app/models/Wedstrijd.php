@@ -20,6 +20,10 @@ class Wedstrijd extends Eloquent {
     	return $wedstrijden;
     }
 
+    public function uitslag() {
+        return $this->hasMany('Uitslag');
+    }
+
 }
 
 ?>
