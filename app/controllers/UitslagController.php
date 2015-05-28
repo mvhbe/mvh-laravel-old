@@ -3,8 +3,11 @@
 class UitslagController extends BaseController {
 
     public function showWedstrijdUitslag($wedstrijd_id){
-        $uitslagen = Uitslag::find($wedstrijd_id);
+        $uitslagen = Uitslag::getWedstrijdUitslag($wedstrijd_id);
+        // terug verwijderen !!
+        $wedstrijd = Wedstrijd::find($wedstrijd_id - 330);
         return View::make('uitslag/uitslag')
+                ->with("wedstrijd", $wedstrijd)
         		->with("uitslagen", $uitslagen);
     }
 
