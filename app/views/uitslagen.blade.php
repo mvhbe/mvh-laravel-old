@@ -6,18 +6,17 @@
 
 @section('content')
 	<h4>Uitslagen</h4>
-	Under construction !
 
-        <table>
-            <tr>
-                <th>Datum</th>
-                <th>Omschrijving</th>
+    <table>
+        <tr>
+            <th>Datum</th>
+            <th>Omschrijving</th>
+        </tr>
+        @foreach($wedstrijden as $wedstrijd)
+            <tr>                            
+                <td><a href="{{ URL::to('/uitslag/' . $wedstrijd->wedstrijd_id) }}" title="{{ $wedstrijd->datum }}">{{ $wedstrijd->datum }}</a></td>
+                <td>{{ $wedstrijd->omschrijving }}</td>
             </tr>
-            @foreach($wedstrijden as $wedstrijd)
-                <tr>
-                    <td>{{ $wedstrijd->datum }}</td>
-                    <td>{{ $wedstrijd->omschrijving }}</td>
-                </tr>
-            @endforeach
-        </table>
+        @endforeach
+    </table>
 @endsection

@@ -42,3 +42,8 @@ Route::get(
 		return View::make('contact');
 	}
 );
+
+Route::get(
+    'uitslag/{wedstrijd_id}', 
+    'UitslagController@showWedstrijdUitslag'
+);
