@@ -6,7 +6,7 @@ class UitslagenController extends BaseController {
     	$kalender = Kalender::orderBy('jaar', 'desc')->first();
         $wedstrijden = Wedstrijd::getWedstrijdenVanKalender($kalender->id);
         $wedstrijden = DB::select(
-            'select distinct wedstrijd_id, w.datum, w.omschrijving from uitslagen u, wedstrijden w where u.wedstrijd_id = w.id + 330'
+            'select distinct wedstrijd_id, w.datum, w.omschrijving from uitslagen u, wedstrijden w where u.wedstrijd_id = w.id'
         );
         return View::make('uitslagen')
         		->with("kalender", $kalender)

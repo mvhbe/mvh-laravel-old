@@ -20,7 +20,7 @@
 	            </tr>
 	            @foreach($wedstrijden as $wedstrijd)
 	                <tr>
-	                    <td>{{ $wedstrijd->datum }}</td>
+	                    <td>{{ date_format(date_create($wedstrijd->datum), "d/m/Y") }}</td>
 	                    <td>{{ $wedstrijd->omschrijving }}</td>
 	                    <td>{{ $wedstrijd->aanvang }}</td>
 	                    <td>{{ $wedstrijd->opmerkingen }}</td>
