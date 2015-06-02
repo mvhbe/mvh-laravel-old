@@ -9,7 +9,6 @@ class KalenderController extends BaseController {
         		->with("kalender", $kalender)
         		->with("wedstrijden", $wedstrijden);
     }
-
 }
 
 ?>

@@ -2,9 +2,9 @@
     <tr>
         <th>Uitslagen</th>
     </tr>
-    @foreach($kalenders as $kalender)
+    @foreach($wedstrijden as $wedstrijd)
         <tr>
-            <td>Uitslagen {{ $kalender->jaar }}</td>
+            <td><a href="{{ URL::to('/archief/wedstrijduitslagen/' . $wedstrijd->id) }}" title="Uitslagen {{ $wedstrijd->jaar }}">Uitslagen {{ $wedstrijd->omschrijving }}</a></td>
         </tr>
     @endforeach
 </table>

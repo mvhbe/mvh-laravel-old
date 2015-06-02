@@ -5,12 +5,12 @@
 
 
 @section('content')
-	<h4>Archief</h4>
+	<h4>Archief - Uitslagen</h4>
 
     @if($kalenders->count() == 0)
-        <h3>Geen Uitslagen.</h3>
+        Geen Uitslagen.
     @else
         <h3>Uitslagen :</h3>
-        @include('uitslagen.overzicht', ['kalender' => $kalenders])
+        @include('uitslagen.overzichtkalenders', ['kalender' => $kalenders])
         @endif
 @endsection

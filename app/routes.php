@@ -22,6 +22,11 @@ Route::get(
 );
 
 Route::get(
+	'archief/kalender/{kalender_id}',
+    'ArchiefController@showKalender'
+);
+
+Route::get(
 	'uitslagen',
     'UitslagenController@uitslagen'
 );
@@ -34,6 +39,11 @@ Route::get(
 Route::get(
 	'archief/uitslagen',
 	'ArchiefController@overzichtUitslagen'
+);
+
+Route::get(
+	'archief/uitslagen/{kalender_id}',
+	'ArchiefController@overzichtWedstrijdUitslagen'
 );
 
 Route::get(

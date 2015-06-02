@@ -4,7 +4,7 @@
     </tr>
     @foreach($kalenders as $kalender)
         <tr>
-            <td>Wedstrijd {{ $kalender->jaar }}</td>
+            <td><a href="{{ URL::to('/archief/kalender/' . $kalender->id) }}" title="Wedstrijdkalender {{ $kalender->jaar }}">Wedstrijdkalender {{ $kalender->jaar }}</a></td>
         </tr>
     @endforeach
 </table>
