@@ -6,11 +6,11 @@
 @section('content')
 	<h4>Kalender</h4>
 
-	@if($kalender->count() == 0)
+	@if(count($kalender) === 0)
 		<h3>Geen kalender.</h3>
 	@else
 		<h3>Wedstrijdkalender {{ $kalender->jaar }}</h3>
-		@if($wedstrijden->count() > 0)
+		@if(count($wedstrijden) > 0)
 	        <table>
 	            <tr>
 	                <th>Datum</th>
@@ -20,7 +20,7 @@
 	            </tr>
 	            @foreach($wedstrijden as $wedstrijd)
 	                <tr>
-	                    <td>{{ date_format(date_create($wedstrijd->datum), "d/m/Y") }}</td>
+	                    <td>{{ $wedstrijd->datum }}</td>
 	                    <td>{{ $wedstrijd->omschrijving }}</td>
 	                    <td>{{ $wedstrijd->aanvang }}</td>
 	                    <td>{{ $wedstrijd->opmerkingen }}</td>

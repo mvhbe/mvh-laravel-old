@@ -6,7 +6,7 @@
 @section('content')
 	<h4>Home</h4>
 
-    @if($wedstrijden->count() == 0)
+    @if(count($wedstrijden) == 0)
         <h3>Geen wedstrijden/evenementen.</h3>
     @else
         <h3>Deze maand :</h3>
