@@ -10,6 +10,6 @@
     @if (count($wedstrijden) === 0)
         Geen uitslagen beschikbaar.
     @else
-        @include("uitslag.overzicht", ['wedstrijden' => wedstrijden])
+        @include("uitslag.overzicht", ['wedstrijden' => $wedstrijden])
     @endif
 @endsection

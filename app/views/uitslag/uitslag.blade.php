@@ -16,17 +16,18 @@
             <tr>
                 <th>Volgorde</th>
                 <th>Deelnemer</th>
-                <th>Plaats 1</th>
-                <th>Reeks 1</th>
+                <th>Plaats R1</th>
+                <th>Gewicht R1</th>
                 @if ($wedstrijd->aantal_reeksen > 1)
-                    <th>Plaats 2</th>
-                    <th>Reeks 2</th>
+                    <th>Plaats R2</th>
+                    <th>Gewicht R2</th>
                 @endif
                 @if ($wedstrijd->aantal_reeksen > 2)
-                    <th>Plaats 3</th>
-                    <th>Reeks 3</th>
+                    <th>Plaats R3</th>
+                    <th>Gewicht R3</th>
                 @endif
                 <th>Totaal</th>
+                <th>Opmerkingen</th>
             </tr>
             @foreach($uitslagen as $uitslag)
                 <tr>
@@ -43,6 +44,7 @@
                         <td align="right">{{ number_format($uitslag->gewicht3, 0, ",", ".") }}</td>
                     @endif
                     <td align="right">{{ number_format($uitslag->totaal_gewicht, 0, ",", ".") }}</td>
+                    <td align="left">{{ $uitslag->opmerkingen }}</td>
                 </tr>
                 {{-- */ $totaal = $totaal + $uitslag->totaal_gewicht /* --}}
             @endforeach
@@ -61,6 +63,7 @@
                     @endif
                     <td align="right"><b>Totaal</b></td>
                     <td align="right"><b>{{ number_format($totaal, 0, ",", ".") }}</b></td>
+                    <td></td>
                 </tr>
             </tfoot>
         </table>
