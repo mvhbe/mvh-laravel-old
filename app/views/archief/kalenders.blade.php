@@ -5,7 +5,7 @@
 
 
 @section('content')
-	<h4>Archief</h4>
+	<h4>Archief - Kalenders</h4>
 
     @if($kalenders->count() == 0)
         <h3>Geen kalenders.</h3>

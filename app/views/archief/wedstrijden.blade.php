@@ -7,10 +7,10 @@
 @section('content')
 	<h4>Archief - UiTslagen</h4>
 
-    <h3>Uitslagen {{ $kalender->jaar }} :</h3>
+    <h3>Uitslagen wedstrijdkalender {{ $kalender->jaar }} :</h3>
     @if(count($wedstrijden) == 0)
         Geen wedstrijduitslagen.
     @else
-        @include('uitslagen.overzicht', ['wedstrijden' => $wedstrijden])
+        @include('uitslag.overzicht', ['wedstrijden' => $wedstrijden])
     @endif
 @endsection

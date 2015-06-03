@@ -9,7 +9,7 @@
 	@if(!isset($wedstrijd))
 		Geen wedstrijduitslag beschikbaar.
 	@else
-        <h4>Wedstrijduitslag : {{ $wedstrijd->datum }} - {{ $wedstrijd->omschrijving }} {{ $wedstrijd->aantal_reeksen }}</h4>
+        <h4>Wedstrijduitslag : {{ $wedstrijd->datum }} - {{ $wedstrijd->omschrijving }}</h4>
 
         <table>
             {{-- */ $totaal = 0 /* --}}

@@ -1,6 +1,6 @@
 @extends('mvh')
 
-@section('pagetitle', 'Archief uitslagen')
+@section('pagetitle', 'Archief - Uitslagen')
 @section('pagedescription', 'Bekijk het archief met uitslagen van visclub moed &amp; volharding herenthout')
 
 
@@ -11,6 +11,6 @@
         Geen Uitslagen.
     @else
         <h3>Uitslagen :</h3>
-        @include('uitslagen.overzichtkalenders', ['kalender' => $kalenders])
-        @endif
+        @include('uitslagen.uitslagen', ['kalenders' => $kalenders])
+    @endif
 @endsection

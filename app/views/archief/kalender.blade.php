@@ -5,7 +5,7 @@
 
 
 @section('content')
-	<h4>Archief - Kalender</h4>
+	<h4>Archief - Kalenders</h4>
 
     @include("kalenders.kalendertabel", ['kalender' => $kalender, 'wedstrijden' => $wedstrijden])
 @endsection

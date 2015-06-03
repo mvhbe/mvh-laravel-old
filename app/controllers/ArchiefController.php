@@ -25,7 +25,7 @@ class ArchiefController extends BaseController {
     public function overzichtWedstrijdUitslagen($kalender_id) {
         $kalender = Kalender::find($kalender_id);
         $wedstrijden = Uitslag::getWedstrijdenVanKalender($kalender_id);
-        return View::make('archief.wedstrijduitslagen')
+        return View::make('archief.wedstrijden')
                 ->with("kalender", $kalender)
                 ->with("wedstrijden", $wedstrijden);
     }
