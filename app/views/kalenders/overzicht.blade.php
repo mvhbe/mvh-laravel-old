@@ -1,6 +1,6 @@
 <table>
     <tr>
-        <th>Kalender</th>
+        <th>Kalenders</th>
     </tr>
     @foreach($kalenders as $kalender)
         <tr>

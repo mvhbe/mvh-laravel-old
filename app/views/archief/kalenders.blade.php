@@ -7,10 +7,10 @@
 @section('content')
 	<h4>Archief - Kalenders</h4>
 
+    <h3>Kalenders :</h3>
     @if($kalenders->count() == 0)
-        <h3>Geen kalenders.</h3>
+        Geen kalenders.
     @else
-        <h3>Kalenders :</h3>
         @include('kalenders.overzicht', ['kalenders' => $kalenders])
     @endif
 @endsection
