@@ -15,6 +15,7 @@ class Uitslag extends Eloquent {
                 ->where("wedstrijden.kalender_id", "=", $kalender_id)
                 ->distinct()
                 ->select("wedstrijden.id as wedstrijd_id", DB::raw("date_format(wedstrijden.datum, '%d/%m/%Y') as datum"), "wedstrijden.omschrijving as omschrijving")
+		->orderBy('wedstrijden.datum')
                 ->get();
     	return $wedstrijden;
     }
